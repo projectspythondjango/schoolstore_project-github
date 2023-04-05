@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block metadescription %}
+   Welcome to Central School
+{% endblock %}
+
+{% block title %}
+    CENTRAL SCHOOL OF HIGHER EDUCATION
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div>
+    <img class="my_image my_image_padding" src="{% static 'images/banner.png' %}" alt="Upload Image">
+    </div>
+    <br>
+</div>
+<!--<div class="container">-->
+<!--    <div class="row my-4">-->
+<!--        {% for i in department %}-->
+<!--        <div class="col-md-3 d-flex">-->
+<!--            <div class="card border-secondary mb-3 " style="max-width:18rem;">-->
+<!--            <img class="card-img-top" src="{{i.image.url}}" alt="Card image cap" width="250" height="250">-->
+<!--            <div class="card-body">-->
+<!--           <h5 class="card-title">{{i.title}}</h5>-->
+
+<!--  </div>-->
+<!--</div>-->
+<!--        </div>-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+<!--</div>-->
+
+{% endblock %}

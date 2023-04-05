@@ -1,0 +1,45 @@
+body{
+background-color:#E9967A;
+font-family: 'Poppins', sans-serif;}
+
+.nav-item{
+
+   letter-spacing: .2em;
+    font-size:14px;
+    text-transform:uppercase;
+    }
+.dropdown-item{
+letter-spacing: .2em;
+text-transform:uppercase;
+font-size:14px;
+}
+
+
+.my_footer{
+background-color:DarkGray;
+
+height:35px;
+
+}
+.my_footer p{
+padding:10px;
+font-size:14px;
+}
+
+
+.my_image{
+width:100%;height:auto;
+
+}
+
+.my_image_padding{
+padding:10px;
+}
+
+
+.my_bottom_margin{
+margin-bottom:10px;
+}
+
+.my_row_class{
+margin-top:10px;}

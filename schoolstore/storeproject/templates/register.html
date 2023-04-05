@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <a href="{% url  'store_app:index' %}"><img src="{% static 'images/logo.png' %}" alt="logimage" width="200px;" height="200px;"style="margin-top:10px;"></a>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <title>CENTRAL SCHOOL-Registration</title>
+    <style>
+        body{background-color:#F5F5DC;text-align:left;}
+        h2{color:Maroon;text-align:left;
+             padding:10px;font-family:arial;}
+        footer{background-color:DarkGray;height:35px;padding:10px;font-size:14px;}
+    </style>
+</head>
+<body>
+<h4><b>Register Here</b></h4>
+<div class="container d flex flex-column min-vh-100">
+<form action="register" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Enter the Username"><br>
+    <input type="password" name="password" placeholder="Enter the Password"><br>
+    <input type="password" name="confirmpassword" placeholder="Confirm Password"><br>
+    <button class="btn btn-primary">Submit</button>
+</form>
+{% for a in messages %}
+    <h4><b>{{a}}</b></h4>
+{% endfor %}
+</div>
+
+<div class="container">
+<footer class="mt-auto nav-fixed-bottom ">
+    <p class="text-center">&copy.CENTRAL SCHOOL pvt Ltd. All Rights Reserved.</p>
+</footer>
+</div>
+
+</body>
+</html>
